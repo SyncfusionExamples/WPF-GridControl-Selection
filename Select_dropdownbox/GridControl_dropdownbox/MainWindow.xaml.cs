@@ -25,10 +25,12 @@ namespace GridControl_dropdownbox
             InitializeComponent();
             grid.Model.RowCount = 7;
             grid.Model.ColumnCount = 4;
-
+            grid.Model.ColumnWidths[2] = 150d;
             grid.Model[1, 2].CellType = "ComboBox";
-            grid.Model[1, 2].CellValue = "Select";
-            grid.Model[1, 2].ChoiceList = new System.Collections.Specialized.StringCollection() { "one", "two" };
+            grid.Model[1, 2].HorizontalAlignment = HorizontalAlignment.Center;
+            grid.Model[1, 2].VerticalAlignment = VerticalAlignment.Center;
+            grid.Model[1, 2].CellValue = "Employee Name";
+            grid.Model[1, 2].ChoiceList = new System.Collections.Specialized.StringCollection() { "George", "Daniel" };
             grid.CurrentCellClosedDropDown += Grid_CurrentCellClosedDropDown;
             grid.CommitCellInfo += Grid_CommitCellInfo;
         }
