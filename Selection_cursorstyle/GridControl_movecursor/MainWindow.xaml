@@ -8,19 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <!--<Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400" />
-            <ColumnDefinition Width="400" />
-        </Grid.ColumnDefinitions>-->
-        <!--<ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-            --><!--<local:GridControlAdv x:Name="grid" />-->
-            <!--<syncfusion:GridControl x:Name="grid" />--><!--
-        </ScrollViewer>
-        <ScrollViewer Grid.Column="1" CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-            <syncfusion:GridControl x:Name="grid1" />
-            --><!--<local:GridControlAdv x:Name="grid1"  />--><!--
-        </ScrollViewer>-->
         <syncfusion:GridControl x:Name="grid1" Margin="10,20,0,0" />
-
     </Grid>
 </Window>
