@@ -49,7 +49,6 @@ namespace GridControl_movecursor
             gridControl.Model.RowCount = 15;
             gridControl.Model.ColumnCount = 8;
             gridControl.Model.HeaderStyle.Borders.All = new Pen(Brushes.LightGray, 1);
-            //gridControl.Model.heade
             gridControl.Model.Options.AllowSelection = Syncfusion.Windows.Controls.Grid.GridSelectionFlags.Any;
             gridControl.AllowDrop = true;
             gridControl.AllowDragDrop = true;
