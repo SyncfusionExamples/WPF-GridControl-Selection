@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "load-gridcontrol", "load-gridcontrol\load-gridcontrol.csproj", "{018765CA-7C51-4286-ABD9-6BB30E9174CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{018765CA-7C51-4286-ABD9-6BB30E9174CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018765CA-7C51-4286-ABD9-6BB30E9174CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018765CA-7C51-4286-ABD9-6BB30E9174CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018765CA-7C51-4286-ABD9-6BB30E9174CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE536A4D-8B5B-455B-8C63-C682BF64F9B7}
+	EndGlobalSection
+EndGlobal
