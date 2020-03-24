@@ -56,7 +56,7 @@ namespace GridControl_movecursor
             gridControl.Model.Options.ActivateCurrentCellBehavior = Syncfusion.Windows.Controls.Grid.GridCellActivateAction.DblClickOnCell;
             mouseController = new ExcelLikeDragDropMouseController(gridControl);
             mouseController.EnableExcelLikeDragDrop(gridControl.Model.Options.DragDropDropTargetFlags | GridDragDropFlags.Multiple);
-            gridControl.MouseControllerDispatcher.Add(mouseController);            
+            gridControl.MouseControllerDispatcher.Add(mouseController);
             gridControl.CellMouseDown += GridControl_CellMouseDown;
             gridControl.DragLeave += Grid_DragLeave;
             gridControl.Model.Options.ShowCurrentCell = false;
@@ -102,7 +102,7 @@ namespace GridControl_movecursor
             RowColumnIndex rowColumn = _grid.PointToCellRowColumnIndex(e);
             if (_grid.Model.SelectedRanges.AnyRangeContains(GridRangeInfo.Cell(rowColumn.RowIndex, rowColumn.ColumnIndex)))
             {
-                Mouse.SetCursor(Cursors.Arrow);
+                Mouse.SetCursor(Cursors.Hand);
             }
             else
                 Mouse.SetCursor(Cursors.Arrow);
