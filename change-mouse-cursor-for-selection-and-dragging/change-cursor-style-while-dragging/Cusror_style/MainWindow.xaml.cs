@@ -26,10 +26,7 @@ namespace Cusror_style
         {
             InitializeComponent();
             this.DataContext = new Model(this.grid.Model);
-
             InitModel();
-            this.grid.Model.Options.CopyPasteOption |= CopyPaste.IncludeStyle;
-            this.grid1.Model.Options.CopyPasteOption |= CopyPaste.IncludeStyle;
             this.grid.Drop += grid_Drop;
             this.grid1.Drop += grid_Drop;
             grid.AllowDragDrop = false;
