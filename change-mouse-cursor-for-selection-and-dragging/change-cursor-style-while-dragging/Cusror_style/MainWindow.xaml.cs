@@ -29,7 +29,9 @@ namespace Cusror_style
             InitModel();
             this.grid.Drop += grid_Drop;
             this.grid1.Drop += grid_Drop;
-            grid.AllowDragDrop = false;
+            grid.Model.Options.ActivateCurrentCellBehavior = GridCellActivateAction.DblClickOnCell;
+            grid1.Model.Options.ActivateCurrentCellBehavior = GridCellActivateAction.DblClickOnCell;
+            grid.AllowDragDrop = true;
         }
 
         void grid_Drop(object sender, DragEventArgs e)
@@ -42,12 +44,14 @@ namespace Cusror_style
         {
             SetGridProperties(this.grid);
             this.grid.Model.Options.DataObjectConsumerOptions = GridDataObjectConsumerOptions.None;
+            this.grid.Model.Options.CopyPasteOption |= CopyPaste.IncludeStyle;
             this.grid1.Model.Options.CopyPasteOption |= CopyPaste.IncludeStyle;
             this.grid1.Model.RowCount = 35;
             this.grid1.Model.ColumnCount = 25;
             this.grid1.AllowDrop = true;
             this.grid1.Model.Options.ExcelLikeSelectionFrame = true;
             this.grid1.Model.Options.DataObjectConsumerOptions = GridDataObjectConsumerOptions.Styles;
+            this.grid.Model.Options.DataObjectConsumerOptions = GridDataObjectConsumerOptions.All;
         }
 
         private void SetGridProperties(GridControl gridControl)
