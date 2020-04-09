@@ -44,7 +44,7 @@
                                              />
         </ScrollViewer>
 
-        <ComboBox x:Name="combo" Grid.Row="0" Margin="5" SelectionChanged="ComboBox_SelectionChanged"
+        <ComboBox x:Name="combo" Grid.Row="0" Margin="5" SelectedIndex="3" SelectionChanged="ComboBox_SelectionChanged"
                                   ItemsSource="{Binding Source={StaticResource ConsOptions}}"
                                   SelectedValue="{Binding ConsumerOptions,
                                                           Mode=TwoWay}" />
