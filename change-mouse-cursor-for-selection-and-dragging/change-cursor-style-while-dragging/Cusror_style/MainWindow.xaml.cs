@@ -125,7 +125,7 @@ namespace Cusror_style
             {
                 e.UseDefaultCursors = false;
                 //To change the cursor while dragging.
-                Mouse.SetCursor(Cursors.SizeAll);
+                grid.Cursor = Cursors.SizeAll;
                 e.Handled = true;
             }
         }
