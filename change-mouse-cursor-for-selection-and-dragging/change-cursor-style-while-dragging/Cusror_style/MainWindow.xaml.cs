@@ -136,10 +136,10 @@ namespace Cusror_style
             RowColumnIndex rowColumn = _grid.PointToCellRowColumnIndex(e);
             if (_grid.Model.SelectedRanges.AnyRangeContains(GridRangeInfo.Cell(rowColumn.RowIndex, rowColumn.ColumnIndex)))
             {
-                grid.Cursor = Cursors.Hand;
+                _grid.Cursor = Cursors.Hand;
             }
             else
-                grid.Cursor = Cursors.Arrow;
+                _grid.Cursor = Cursors.Arrow;
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
