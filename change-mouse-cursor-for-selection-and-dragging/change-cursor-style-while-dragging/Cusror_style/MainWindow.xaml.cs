@@ -125,7 +125,7 @@ namespace Cusror_style
             {
                 e.UseDefaultCursors = false;
                 //To change the cursor while dragging.
-                Mouse.SetCursor(Cursors.SizeAll);
+                grid.Cursor = Cursors.SizeAll;
                 e.Handled = true;
             }
         }
@@ -136,10 +136,10 @@ namespace Cusror_style
             RowColumnIndex rowColumn = _grid.PointToCellRowColumnIndex(e);
             if (_grid.Model.SelectedRanges.AnyRangeContains(GridRangeInfo.Cell(rowColumn.RowIndex, rowColumn.ColumnIndex)))
             {
-                Mouse.SetCursor(Cursors.Hand);
+                _grid.Cursor = Cursors.Hand;
             }
             else
-                Mouse.SetCursor(Cursors.Arrow);
+                _grid.Cursor = Cursors.Arrow;
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
